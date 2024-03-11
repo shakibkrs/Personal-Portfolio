@@ -1,0 +1,446 @@
+*{
+   margin: 0px;
+   padding: 0px;
+   scroll-behavior: smooth;
+}
+a{
+   color: black;
+   text-decoration: none;
+}
+h1{
+   font: 700 40px arial;
+   text-align: center;
+   text-decoration: underline;
+}
+
+/* start nav */
+nav{
+   display: flex;
+   justify-content: space-between;
+   background: teal;
+   position: sticky;
+   top: 0px;
+   z-index: 1;
+}
+nav .logo a{
+   font: 40px "Rowdies", sans-serif;
+   margin-left: 20%;
+}
+nav ul{
+   list-style: none;
+   display: flex;
+   align-items: center;
+}
+nav ul li a{
+   margin: 0px 10px;
+   color: black;
+   text-decoration: none;
+   position: relative;
+   font-family: Arial, Helvetica, sans-serif;
+}
+nav ul li a:hover{
+   font-weight: bolder;
+   font-size: 20px;
+}
+nav ul .small-menu{
+   display: none;
+}
+nav ul li form input{
+   height: 40px;
+   width: 90px;
+   border-radius: 20px;
+   padding-left: 5px;
+   font-size: 20px;
+}
+nav ul li form button{
+   font-size: 25px;
+   background: none;
+   border: none;
+}
+nav ul li form button:hover{
+   font-weight: normal;
+   font-size: 25px;
+}
+/* end Nav */
+
+/* start Heading */
+header{
+   background: url("Images/Background.png");
+   background-position: center;
+   background-size: cover;
+   height: 92vh;
+}
+.heading{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0px 5%;
+}
+.heading .heading-text svg{
+   width: 100%;
+}
+.heading .heading-text svg text{
+   font: 700 90px arial;
+   animation: name .5s linear infinite;
+   padding-bottom: 2%;
+   stroke: #61b8ff;
+   stroke-linejoin: round;
+   stroke-dasharray: 30;
+}
+@keyframes name{
+   from{  stroke-dashoffset: 0px;}
+   to{  stroke-dashoffset: 100px;}
+}
+.heading .heading-text p{
+   font: 20px bolder;
+   font-family: "Salsa", cursive;
+}
+.heading .heading-text button{
+   width: 100px;
+   height: 40px;
+   background: transparent;
+   margin: 10px;
+   border: 3px solid black;
+   transition: .5s;
+}
+.heading .heading-text button:hover{
+   background: teal;
+}
+.heading .heading-text button a{
+   text-decoration: none;
+   color: black;
+   font: 20px arial;
+}
+.heading .heading-image{
+   align-self: flex-end;
+}
+.heading .heading-image img{
+   height: 80vh;
+   display: flex;
+   align-items: end;
+}
+/* end Heading */
+
+/* start About Me */
+#about h1{
+   margin-top: 10vh;
+}
+#about .about-main{
+   display: flex;
+   align-items: center;
+   gap: 10%;
+   margin: 5% 17%;
+}
+#about .about-main img{
+   width: 20%;
+   border-radius: 50%;
+}
+#about .about-main .about-text h2{
+   font-family: arial;
+   margin-bottom: 2%;
+}
+#about .about-main .about-text p{
+   font-family: arial;
+   text-align: justify;
+}
+/* end About Me */
+
+/* start Skills */
+#skills{
+   margin: 12% 10% 5%;
+   padding: 2%;
+   border-radius: 10px;
+   background: turquoise;
+}
+#skills h1{
+   margin-bottom: 5%;
+}
+#skills .skill-main{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10%;
+}
+#skills .skill-main .skill-1 h2, #skills .skill-main .skill-2 h2{
+   font: bold 30px arial;
+   margin-bottom: 3%;
+}
+#skills .skill-main .skill-1 p{
+   font-family: arial;
+   text-align: justify;
+}
+#skills .skill-main .skill-2 div h3{
+   font-family: "Satisfy", cursive;
+}
+#skills .skill-main .skill-2 div .bar{
+   height: 5px;
+   /* background: green; */
+   border: 1px solid black;
+   border-radius: 3px;
+}
+#skills .skill-main .skill-2 div .bar .html{
+   width: 90%;
+   height: 5px;
+   background: gray;
+}
+.css{
+   width: 80%;
+   height: 5px;
+   background: gray;
+}
+.JavaScript{
+   width: 50%;
+   height: 5px;
+   background: gray;
+}
+.jQuery{
+   width: 40%;
+   height: 5px;
+   background: gray;
+}
+
+/* start Service */
+#services .service-about h1{
+   margin: 2%;
+}
+#services .service-about p{
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+}
+#services .service-all{
+   display: flex;
+   gap: 5%;
+   margin: 5% 10%;
+}
+#services .service-all div{
+   padding: 3%;
+   padding-bottom: 1%;
+   border-radius: 10px;
+   background-color: turquoise;
+   transition: .3s;
+}
+#services .service-all div:hover{
+   box-shadow: 0px 0px 15px 3px gray;
+}
+#services .service-all div h2{
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+   margin-bottom: 5%;
+}
+#services .service-all div p{
+   text-align: justify;
+   font-family: Arial, Helvetica, sans-serif;
+}
+#services .service-all div button{
+   display: block;
+   margin: 5% auto;
+   width: 80%;
+   height: 10%;
+   background-color: teal;
+   border: 2px solid black ;
+   font: 20px arial;
+   border-radius: 15px;
+}
+#services .service-all div button:hover{
+   background-color: turquoise;
+}
+/* end Services */
+
+/* start Works */
+#works .work-about h1{
+   margin-block: 12% 2%;
+}
+#works .work-about p{
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+}
+#works .work-all{
+   display: flex;
+   justify-content: space-between;
+   margin: 5% 10%;
+}
+#works .work-all div{
+   flex-basis: 30%;
+   border-radius: 10px;
+   position: relative;
+}
+#works .work-all div img{
+   width: 100%;
+   height: 100%;
+}
+#works .work-all div div{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0px;
+   transition: 0.5s;
+}
+#works .work-all div div:hover{
+   background-color: rgba(64, 224, 208, 0.486);
+}
+#works .work-all div div h1{
+   width: 100%;
+   font-weight: 500;
+   color: black;
+   font-size: 25px;
+   transform: translate(10%, 600%);
+   opacity: 0;
+   transition: .5s;
+}
+#works .work-all div div:hover h1{
+   opacity: 1;
+   transform: translate(10%, 400%);
+}
+/* end Works */
+
+/* Image Gallery Start *
+.imageGallery .allImage{
+   width: 798px;
+   height: 230px;
+   border: 2px solid black;
+   overflow: hidden;
+   margin: 70px auto;
+}
+.imageGallery .allImage .imageFolder{    width: 10000px;    height: 265px;}
+main .imageGallery2{    margin-top: 100px;}
+.imageGallery .allImage .imageFolder img{    width: 400px;    height: 265px;    margin: 0px -2px;}
+/* Image Gallery End */
+/* Button Start *
+.imageGallery .buttonFolder, .buttonFolder button{
+   font-size: 50px;
+   width: 60px;
+   height: 60px;
+   background: orangered;
+   border: 3px solid black;
+   border-radius: 15px;
+   overflow: hidden;
+   z-index: 0;
+}
+.imageGallery .buttonFolder{    margin: auto;}
+.imageGallery .buttonFolderC1 button, .imageGallery .buttonFolderC2 button {
+   display: none;
+}
+
+.buttonFolderB1{    translate: -60px;}
+.buttonFolderB2{    transform: translate(60px, -65px);}
+.buttonFolderC1{    translate: -250px;}
+.buttonFolderC2{    transform: translate(250px, -65px);}
+/* end Button */
+
+/* start Review */
+#review{
+   text-align: center;
+   margin: 10% auto;
+}
+#review h1{
+   margin-bottom: 2%;
+}
+#review p{
+   font: 20px arial;
+}
+#review .review-all{
+   display: flex;
+   justify-content: space-between;
+   width: 80%;
+   margin: auto;
+   margin-top: 5%;
+}
+#review .review-all .review-main{
+   flex-basis: 45%;
+   background-color: aqua;
+   border-radius: 10px;
+   display: flex;
+   text-align: left;
+   padding: 15px;
+}
+#review .review-all .review-main{
+   display: flex;
+}
+#review .review-all .review-main img{
+   width: 100px;
+   margin-right: 10%;
+}
+#review .review-all .review-main div h3{
+   padding: 5% 10%;
+}
+/* end Review */
+
+/* start Follow */
+#follow{
+   width: 60%;
+   margin: 5% auto;
+   padding: 5%;
+   text-align: center;
+   color: white;
+   background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.9)), url(Images/Background.png);
+   border-radius: 10px;
+}
+#follow button{
+   width: 8vw;
+   height: 3vw;
+   background: transparent;
+   margin: 10px;
+   border: 3px solid white;
+   color: white;
+   transition: .5s;
+}
+#follow button:hover{
+   background: teal;
+}
+/* end Follow */
+
+/* start Footer */
+footer .footer-collum{
+   background: #24262b;
+   color: white;
+   display: flex;
+   padding: 2% 15%;
+   justify-content: space-between;
+}
+footer .footer-collum div ul{
+   list-style: none;
+   /* color: white; */
+}
+footer .footer-collum div ul li{
+   padding: 3%;
+   /* color: white; */
+   transition: .5s;
+}
+footer .footer-collum div ul li a{
+   color: white;
+   transition: .3s;
+}
+footer .footer-collum div ul li a:hover{
+   margin-left: 5%;
+   color: turquoise;
+}
+footer .footer-collum div h3{
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   margin-bottom: 5%;
+}
+footer .footer-collum div h3::after{
+   content: '';
+   height: 3px;
+   width: 100px;
+   display: block;
+   background: #e91e63;
+   margin-bottom: 12%;
+}
+footer .footer-collum .socilal-links a i{
+   width: 40px;
+   height: 40px;
+   border-radius: 100%;
+   color: white;
+   background: rgba(255, 255, 255, 0.534);
+   text-align: center;
+   line-height: 40px;
+}
+footer .footer-collum .socilal-links a i:hover{
+   margin-left: 0%;
+   color: black;
+   background: turquoise;
+}
+/* end Footer */
+
