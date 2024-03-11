@@ -37,6 +37,7 @@ nav ul li a{
    text-decoration: none;
    position: relative;
    font-family: Arial, Helvetica, sans-serif;
+   transition: .1s;
 }
 nav ul li a:hover{
    font-weight: bolder;
